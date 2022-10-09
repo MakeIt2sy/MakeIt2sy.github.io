@@ -1,0 +1,122 @@
+/*바디 모든 요소 중앙으로 옮김*/
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 6px gray ; 
+}
+
+/*배경이미지*/
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+    }
+
+ul {
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+}
+
+#clock {
+    font-size: 8em;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+#loginForm{
+    padding: 10px;
+}
+
+/*로그인*/
+#loginForm input:first-child{
+    font-size: 3em;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+/*로그인,투두의 플레이스 홀더*/
+input::placeholder{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 6px gray ; 
+}
+
+/*모든 인풋 focus 될 때 outline 없애기*/
+input:focus{
+    outline: none;
+}
+
+/*그리팅*/
+#greeting{
+    font-size: 3em;
+    margin-top: 0;
+
+}
+
+/*투두*/
+#todoForm input {
+    font-size: 1.8em;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+#todoList li {
+    font-size: 1.5em;
+    margin: 4px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 10px 10px 20px gray ;
+    letter-spacing: 0.2em; 
+
+}
+
+#todoList li button{
+    font-size: 0.9em;
+    background-color: transparent;
+    border: none;
+}
+
+/*인용문*/
+#quote {
+    position:fixed;
+    bottom: 30px;
+    font-size: 1.3em;
+}
+
+/*날씨*/
+#weather {
+    position:fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 1.1em;
+    color: beige;
+    font-weight: bold;   
+}
+
+
+
+
+
